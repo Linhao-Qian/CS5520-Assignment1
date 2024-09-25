@@ -15,6 +15,7 @@ export default function Game({handleRestart, lastDigit}) {
   const [time, setTime] = useState(60);
   const timerRef = useRef(null);
 
+  // set a timer through the React hook useEffect
   useEffect(() => {
     if (time <= 0) {
       clearInterval(timerRef.current);
@@ -22,6 +23,7 @@ export default function Game({handleRestart, lastDigit}) {
     }
   }, [time])
 
+  // monitor the number of attempts through the React hook useEffect
   useEffect(() => {
     if (status === 'playing' && attempts > 0) {
       let isInvalid = false;
@@ -82,7 +84,7 @@ export default function Game({handleRestart, lastDigit}) {
   }
 
   const handleEnd = () => {
-    clearInterval(timer);
+    clearInterval(timerRef.current);
     setStatus('over');
   }
 
@@ -93,6 +95,7 @@ export default function Game({handleRestart, lastDigit}) {
     handleStart();
   }
 
+  // According to different status, show different content of the card.
   const Content = () => {
     switch (status) {
       case 'initiating':

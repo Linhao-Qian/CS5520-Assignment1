@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native"
 
+// the color set
 export const colors = {
     darkBlue: '#2e0690',
     bluishViolet: '#33009f',

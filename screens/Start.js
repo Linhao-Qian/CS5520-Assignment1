@@ -29,6 +29,7 @@ export default function Start({handleConfirmRegister}) {
   }
 
   const handleRegister = () => {
+    // check if the inputs are invalid
     if (name.match(rules.name) && email.match(rules.email) && phone.match(rules.phone)) {
       setIsModalVisible(true);
     } else {

@@ -22,6 +22,7 @@ export default function App() {
   return (
     <View style={commonStyles.container}>
       <Background>
+        {/* switch different screens by the state "isRegistered" */}
         {isRegistered 
           ?
           <Game handleRestart={handleRestart} lastDigit={lastDigit} />
