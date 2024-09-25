@@ -1,4 +1,4 @@
-import { Modal, StyleSheet, Text, View } from 'react-native'
+import { Modal, StyleSheet, View } from 'react-native'
 import React from 'react'
 import Card from '../components/Card'
 import ModalText from '../components/ModalText'
@@ -34,8 +34,7 @@ const styles = StyleSheet.create({
   },
   buttons: {
     width: '100%',
-    marginTop: 16,
-    marginBottom: 16,
+    marginVertical: 16,
     flexDirection: 'row',
     justifyContent: 'center',
     gap: 32,

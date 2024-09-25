@@ -109,8 +109,7 @@ const styles = StyleSheet.create({
   },
   buttons: {
     width: '100%',
-    marginTop: 50,
-    marginBottom: 50,
+    marginVertical: 50,
     flexDirection: 'row',
     justifyContent: 'center',
     gap: 50,

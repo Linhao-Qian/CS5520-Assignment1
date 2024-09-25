@@ -1,6 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import Game from './screens/Game';
 import Start from './screens/Start';
 import { commonStyles } from './helper';
